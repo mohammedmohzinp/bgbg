@@ -1,0 +1,12 @@
+.uploadVideo {
+    width: auto;
+    background: black;
+    opacity: 0.5;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.uploadVideo form {
+    display: block;
+}

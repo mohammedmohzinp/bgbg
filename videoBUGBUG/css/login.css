@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+body {
+    background-image: linear-gradient(to top, #0a212c, #2c7b7c);
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: 'Inter', sans-serif;
+}
+
+.navBar {
+    background-color: #0a212c;
+    opacity: 0.8;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.navBar .company {
+    justify-content: flex-start;
+    margin-right: 200px;
+    position: relative;
+}
+
+.navBar a {
+    color: rgb(154, 154, 154);
+    text-decoration: unset;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.navBar a.link {
+    font-size: 15px;
+}
+
+.navBar a:hover {
+    background: black;
+    height: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.navBar a:hover::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #2c7b7c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navBar a:hover::after {
+    content: "";
+    width: 100%;
+    /* opacity: 0.3;
+    background: black; */
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.navBar .active {
+    color: white;
+    z-index: 999;
+    background: black;
+    border-radius: 5px;
+}
+
+.navBar a.link.active::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #2c7b7c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navBar a.link.active::after {
+    content: "";
+    width: 100%;
+    /* opacity: 0.3;
+    background: black; */
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginForm {
+    width: 100%;
+    background: #0a212c;
+    width: clamp(100px, calc(100% - 30px), 400px);
+    display: grid;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.loginForm label {
+    color: white;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: unset;
+    outline: unset;
+    margin-bottom: 10px;
+}
+
+
+/* input[type="submit"] {} */
