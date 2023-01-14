@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+* {
+    margin: unset;
+}
+
 body {
     background-image: linear-gradient(to top, #0a212c, #2c7b7c);
     height: 100vh;
     background-repeat: no-repeat;
     font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    padding: 20px;
 }
 
 .navBar {
@@ -89,7 +95,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 }
 
 .loginForm {
@@ -97,7 +103,7 @@ body {
     background: #0a212c;
     width: clamp(100px, calc(100% - 30px), 400px);
     display: grid;
-    padding: 20px;
+    padding: 100px 20px;
     border-radius: 10px;
 }
 
@@ -110,11 +116,15 @@ input[type="text"],
 input[type="password"],
 input[type="submit"] {
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
     border: unset;
     outline: unset;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-
-/* input[type="submit"] {} */
+input[type="submit"] {
+    background-color: rgb(50, 107, 50);
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
